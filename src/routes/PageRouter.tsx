@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import AlbumPage from "../components/AlbumPage";
-import GiftPage from "../components/GiftPage";
-import GuestbookPage from "../components/GuestbookPage";
+import AlbumPage from "../pages/AlbumPage";
+import GiftPage from "../pages/GiftPage";
+import GuestbookPage from "../pages/GuestbookPage";
 import HeaderMenu from "../components/HeaderMenu";
-import MainPage from "../components/MainPage";
-import ProfilePage from "../components/ProfilePage";
+import MainPage from "../pages/MainPage";
+import ProfilePage from "../pages/ProfilePage";
 import paths from "./paths.json";
 import RouterContainer from "./RouterContainer";
 

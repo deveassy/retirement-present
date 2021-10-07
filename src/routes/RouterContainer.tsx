@@ -22,6 +22,15 @@ export default function RouterContainer(props: RouterProps) {
   );
 }
 
-const HeaderContainer = styled.div``;
-const BodyContainer = styled.div``;
+const HeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  text-decoration: none;
+  color: #000;
+`;
+const BodyContainer = styled.div`
+  margin-top: 100px;
+`;
 const FooterContainer = styled.div``;
