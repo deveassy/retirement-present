@@ -3,18 +3,16 @@ import { Route, Switch } from "react-router-dom";
 import AlbumPage from "../pages/AlbumPage";
 import GiftPage from "../pages/GiftPage";
 import GuestbookPage from "../pages/GuestbookPage";
-import HeaderMenu from "../components/HeaderMenu";
 import MainPage from "../pages/MainPage";
 import ProfilePage from "../pages/ProfilePage";
 import paths from "./paths.json";
-import RouterContainer from "./RouterContainer";
 
 function PageRouter() {
-  const renderHeader = () => {
-    return <HeaderMenu />;
-  };
+  // const renderHeader = () => {
+  //   return <HeaderContainer />;
+  // };
   return (
-    <RouterContainer renderHeader={renderHeader}>
+    <div>
       <Switch>
         <Route exact path={paths.main} component={MainPage} />
         <Route path={paths.profile} component={ProfilePage} />
@@ -22,7 +20,7 @@ function PageRouter() {
         <Route path={paths.album} component={AlbumPage} />
         <Route path={paths.guestbook} component={GuestbookPage} />
       </Switch>
-    </RouterContainer>
+    </div>
   );
 }
 
